@@ -1,0 +1,32 @@
+---
+title: "narrniche statistical analysis"
+output: html_document
+date: "2025-12-16"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(lme4)
+```
+
+```{r}
+data <- read_csv("../data/processed/data.csv")
+data
+```
+
+## Count Model
+
+```{r}
+cm <- lmer(lf_count_log ~ narr_freq_log + else_freq_log + (1|lang) + (1|field), data)
+summary(cm)
+```
+
+
+## Entropy Model
+
+```{r}
+em <- lmer(lf_entropy ~ narr_freq_log + else_freq_log + (1|lang) + (1|field), data)
+summary(em)
+```
+
