@@ -13,3 +13,5 @@ wheels/
 # Other
 references/
 uv.lock
+.Rproj.user
+*.Rproj
