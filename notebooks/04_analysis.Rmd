@@ -83,10 +83,10 @@ p_value
 
 
 ```{r}
-slope_A = 1.568e-02
-slope_B = -9.903e-03
-se_A = 1.337e-02
-se_B = 1.163e-02
+slope_A = 1.572e-01
+slope_B = 7.594e-02
+se_A = 1.096e-02 
+se_B = 9.429e-03
 n = 3243
 
 # Calculate Welch's T-test statistic

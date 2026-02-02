@@ -3400,7 +3400,7 @@
 <text transform='translate(317.32,316.87) rotate(-90)' text-anchor='end' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='33.25px' lengthAdjust='spacingAndGlyphs'>20 k</text>
 <text transform='translate(340.56,316.87) rotate(-90)' text-anchor='end' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='33.25px' lengthAdjust='spacingAndGlyphs'>40 k</text>
 <text transform='translate(354.15,316.87) rotate(-90)' text-anchor='end' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='33.25px' lengthAdjust='spacingAndGlyphs'>60 k</text>
-<text x='214.24' y='380.52' text-anchor='middle' style='font-size: 22.00px; font-family: "Liberation Sans";' textLength='199.30px' lengthAdjust='spacingAndGlyphs'>Narrative Frequency</text>
+<text x='214.24' y='380.52' text-anchor='middle' style='font-size: 22.00px; font-family: "Liberation Sans";' textLength='246.98px' lengthAdjust='spacingAndGlyphs'>Non-Narrative Frequency</text>
 <text transform='translate(31.58,161.72) rotate(-90)' text-anchor='middle' style='font-size: 22.00px; font-family: "Liberation Sans";' textLength='58.70px' lengthAdjust='spacingAndGlyphs'>Count</text>
 </g>
 <defs>
@@ -6690,7 +6690,7 @@
 <text transform='translate(692.78,316.87) rotate(-90)' text-anchor='end' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='33.25px' lengthAdjust='spacingAndGlyphs'>60 k</text>
 <text transform='translate(704.99,316.87) rotate(-90)' text-anchor='end' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='33.25px' lengthAdjust='spacingAndGlyphs'>90 k</text>
 <text transform='translate(713.66,316.87) rotate(-90)' text-anchor='end' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='43.03px' lengthAdjust='spacingAndGlyphs'>120 k</text>
-<text x='567.76' y='380.52' text-anchor='middle' style='font-size: 22.00px; font-family: "Liberation Sans";' textLength='152.84px' lengthAdjust='spacingAndGlyphs'>Else Frequency</text>
+<text x='567.76' y='380.52' text-anchor='middle' style='font-size: 22.00px; font-family: "Liberation Sans";' textLength='246.98px' lengthAdjust='spacingAndGlyphs'>Non-Narrative Frequency</text>
 <text transform='translate(384.71,161.72) rotate(-90)' text-anchor='middle' style='font-size: 22.00px; font-family: "Liberation Sans";' textLength='58.70px' lengthAdjust='spacingAndGlyphs'>Count</text>
 </g>
 <defs>
@@ -13286,7 +13286,7 @@
 <text transform='translate(1413.87,316.87) rotate(-90)' text-anchor='end' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='33.25px' lengthAdjust='spacingAndGlyphs'>60 k</text>
 <text transform='translate(1426.62,316.87) rotate(-90)' text-anchor='end' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='33.25px' lengthAdjust='spacingAndGlyphs'>90 k</text>
 <text transform='translate(1435.67,316.87) rotate(-90)' text-anchor='end' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='43.03px' lengthAdjust='spacingAndGlyphs'>120 k</text>
-<text x='1283.91' y='380.52' text-anchor='middle' style='font-size: 22.00px; font-family: "Liberation Sans";' textLength='152.84px' lengthAdjust='spacingAndGlyphs'>Else Frequency</text>
+<text x='1283.91' y='380.52' text-anchor='middle' style='font-size: 22.00px; font-family: "Liberation Sans";' textLength='246.98px' lengthAdjust='spacingAndGlyphs'>Non-Narrative Frequency</text>
 <text transform='translate(1114.56,161.72) rotate(-90)' text-anchor='middle' style='font-size: 22.00px; font-family: "Liberation Sans";' textLength='75.81px' lengthAdjust='spacingAndGlyphs'>Entropy</text>
 </g>
 <defs>
@@ -16588,7 +16588,7 @@
 <text x='285.11' y='717.91' text-anchor='middle' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>4</text>
 <text x='343.22' y='717.91' text-anchor='middle' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>5</text>
 <text x='214.24' y='742.19' text-anchor='middle' style='font-size: 22.00px; font-family: "Liberation Sans";' textLength='111.28px' lengthAdjust='spacingAndGlyphs'>Count Data</text>
-<text x='80.84' y='425.17' style='font-size: 26.40px; font-family: "Liberation Sans";' textLength='130.53px' lengthAdjust='spacingAndGlyphs'>Else Model</text>
+<text x='80.84' y='425.17' style='font-size: 26.40px; font-family: "Liberation Sans";' textLength='243.41px' lengthAdjust='spacingAndGlyphs'>Non-Narrative Model</text>
 </g>
 <defs>
   <clipPath id='cpNDMzLjk2fDcwMS41NXw0NDEuNjF8Njk1Ljk0'>
@@ -19889,7 +19889,7 @@
 <text x='638.83' y='717.91' text-anchor='middle' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>4</text>
 <text x='697.11' y='717.91' text-anchor='middle' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>5</text>
 <text x='567.76' y='742.19' text-anchor='middle' style='font-size: 22.00px; font-family: "Liberation Sans";' textLength='111.28px' lengthAdjust='spacingAndGlyphs'>Count Data</text>
-<text x='433.96' y='425.17' style='font-size: 26.40px; font-family: "Liberation Sans";' textLength='197.23px' lengthAdjust='spacingAndGlyphs'>Narr+Else Model</text>
+<text x='433.96' y='425.17' style='font-size: 26.40px; font-family: "Liberation Sans";' textLength='199.45px' lengthAdjust='spacingAndGlyphs'>Combined Model</text>
 </g>
 <defs>
   <clipPath id='cpNzY4LjMxfDEwNzcuNTB8NDQxLjYxfDY5NS45NA=='>
@@ -23193,7 +23193,7 @@
 <text x='1014.78' y='717.91' text-anchor='middle' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>4</text>
 <text x='1072.89' y='717.91' text-anchor='middle' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>5</text>
 <text x='922.90' y='742.19' text-anchor='middle' style='font-size: 22.00px; font-family: "Liberation Sans";' textLength='128.39px' lengthAdjust='spacingAndGlyphs'>Entropy Data</text>
-<text x='768.31' y='425.17' style='font-size: 26.40px; font-family: "Liberation Sans";' textLength='130.53px' lengthAdjust='spacingAndGlyphs'>Else Model</text>
+<text x='768.31' y='425.17' style='font-size: 26.40px; font-family: "Liberation Sans";' textLength='243.41px' lengthAdjust='spacingAndGlyphs'>Non-Narrative Model</text>
 </g>
 <defs>
   <clipPath id='cpMTE0NC4yNXwxNDIzLjU2fDQ0MS42MXw2OTUuOTQ='>
@@ -26498,7 +26498,7 @@
 <text x='1366.91' y='717.91' text-anchor='middle' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>4</text>
 <text x='1419.40' y='717.91' text-anchor='middle' style='font-size: 17.60px;fill: #4D4D4D; font-family: "Liberation Sans";' textLength='9.78px' lengthAdjust='spacingAndGlyphs'>5</text>
 <text x='1283.91' y='742.19' text-anchor='middle' style='font-size: 22.00px; font-family: "Liberation Sans";' textLength='128.39px' lengthAdjust='spacingAndGlyphs'>Entropy Data</text>
-<text x='1144.25' y='425.17' style='font-size: 26.40px; font-family: "Liberation Sans";' textLength='197.23px' lengthAdjust='spacingAndGlyphs'>Narr+Else Model</text>
+<text x='1144.25' y='425.17' style='font-size: 26.40px; font-family: "Liberation Sans";' textLength='199.45px' lengthAdjust='spacingAndGlyphs'>Combined Model</text>
 </g>
 </g>
 </svg>
