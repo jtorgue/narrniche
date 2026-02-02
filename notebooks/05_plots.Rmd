@@ -40,7 +40,7 @@ plt_count_nar = d %>%
     geom_point(alpha=0.1) +
     geom_smooth(formula = y~x, method = 'lm') +
     xlab('Narrative Frequency') +
-    ylab('Number of Wordforms') +
+    ylab('Count') +
     theme_bw(base_size=22) +
     scale_x_continuous(trans='log1p',
                        labels = label_number(scale_cut = cut_si(''))) +
@@ -52,8 +52,8 @@ plt_count_els = d %>%
     ggplot(aes(else_freq*1e6, lf_count)) +
     geom_point(alpha=0.1) +
     geom_smooth(formula = y~x, method = 'lm') +
-    xlab('Other Frequency') +
-    ylab('Number of Wordforms') +
+    xlab('Else Frequency') +
+    ylab('Count') +
     theme_bw(base_size=22) +
     scale_x_continuous(trans='log1p',
                        labels = label_number(scale_cut = cut_si(''))) +
@@ -95,7 +95,7 @@ plt_cou_w1 = d %>%
              label = r2_c_w1_text, parse = TRUE, size = 9) +
     theme_bw(base_size=22) +
     ylab('Count Prediction') + xlab('Count Data') +
-    ggtitle('Narrative Model') +
+    ggtitle('Narr+Else Model') +
     coord_equal()
 plt_cou_w1
 
@@ -132,7 +132,7 @@ plt_ent_els = d %>%
     ggplot(aes(else_freq*1e6, lf_entropy)) +
     geom_point(alpha=0.1) +
     geom_smooth(formula = y~x, method = 'lm') +
-    xlab('Other Frequency') +
+    xlab('Else Frequency') +
     ylab('Entropy') +
     theme_bw(base_size=22) +
     scale_x_continuous(trans='log1p',
@@ -172,7 +172,7 @@ plt_ent_w1 = d %>%
              label = r2_e_w1_text, parse = TRUE, size = 9) +
     theme_bw(base_size=22) +
     ylab('Entropy Prediction') + xlab('Entropy Data') +
-    ggtitle('Narrative Model') +
+    ggtitle('Narr+Else Model') +
     coord_equal()
 plt_ent_w1
 

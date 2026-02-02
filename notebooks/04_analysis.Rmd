@@ -21,31 +21,32 @@ data
 ## Count Model
 
 ```{r}
-# w/narr
-cm_narr <- lmer(lf_count_log ~ narr_freq_log + else_freq_log + (1|lang) + (1|field), data)
-summary(cm_narr)
-```
-
-
-```{r}
-# else
 cm_else <- lmer(lf_count_log ~ else_freq_log + (1|lang) + (1|field), data)
 summary(cm_else)
+
+cm_narr <- lmer(lf_count_log ~ narr_freq_log + (1|lang) + (1|field), data)
+summary(cm_narr)
+
+cm_narrelse <- lmer(lf_count_log ~ narr_freq_log + else_freq_log + (1|lang) + (1|field), data)
+summary(cm_narrelse)
+
+anova(cm_else, cm_narr, cm_narrelse)
 ```
 
 
 ## Entropy Model
 
 ```{r}
-# w/narr
-em_narr <- lmer(lf_entropy ~ narr_freq_log + else_freq_log + (1|lang) + (1|field), data)
-summary(em)
-```
-
-```{r}
-# else
 em_else <- lmer(lf_entropy ~ else_freq_log + (1|lang) + (1|field), data)
 summary(em_else)
+
+em_narr <- lmer(lf_entropy ~ narr_freq_log + (1|lang) + (1|field), data)
+summary(em_narr)
+
+em_narrelse <- lmer(lf_entropy ~ narr_freq_log + else_freq_log + (1|lang) + (1|field), data)
+summary(em_narrelse)
+
+anova(em_else, em_narr, em_narrelse)
 ```
 
 ```{r}
@@ -53,41 +54,18 @@ data$pred_count_narr <- predict(cm_narr)
 data$pred_count_else <- predict(cm_else)
 data$pred_entropy_narr <- predict(em_narr)
 data$pred_entropy_else <- predict(em_else)
-```
-
-```{r}
 write_csv(data, '../data/processed/data_pred.csv')
 ```
 
-```{r}
-cm_narr
-```
 
 
 ```{r}
-drop1(cm, test = "F")
-```
 
-
-```{r}
-report(em)
-```
-
-
-
-
-```{r}
-cov2cor(vcov(em))
-```
-
-
-
-```{r}
-slope_A = 0.40
-slope_B = 0.21
-se_A = 0.01
-se_B = 0.01
-n = 3200
+slope_A = 1.356e-01
+slope_B = 6.530e-02
+se_A = 9.540e-03
+se_B = 8.200e-03
+n = 3243
 
 # Calculate Welch's T-test statistic
 t_stat <- (slope_A - slope_B) / sqrt(se_A^2 + se_B^2)
@@ -103,3 +81,24 @@ t_stat
 p_value
 ```
 
+
+```{r}
+slope_A = 1.568e-02
+slope_B = -9.903e-03
+se_A = 1.337e-02
+se_B = 1.163e-02
+n = 3243
+
+# Calculate Welch's T-test statistic
+t_stat <- (slope_A - slope_B) / sqrt(se_A^2 + se_B^2)
+
+# Degrees of freedom
+df <- ((se_A^2 + se_B^2)^2) / (((se_A^2)^2 / (n - 2)) + ((se_B^2)^2 / (n - 2)))
+
+# Calculate p-value
+p_value <- 2 * pt(-abs(t_stat), df)
+
+# Display the test statistic and p-value
+t_stat
+p_value
+```
