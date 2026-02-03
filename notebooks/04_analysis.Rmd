@@ -15,8 +15,8 @@ library(report)
 ```{r}
 data <- read_csv("../data/processed/data.csv")
 data <- drop_na(data)
-data
 ```
+
 
 ## Count Model
 
@@ -37,35 +37,26 @@ anova(cm_else, cm_narr, cm_narrelse)
 ## Entropy Model
 
 ```{r}
-em_else <- lmer(lf_entropy ~ else_freq_log + (1|lang) + (1|field), data)
+em_else <- lmer(log(lf_entropy + 1) ~ else_freq_log + (1|lang) + (1|field), data)
 summary(em_else)
 
-em_narr <- lmer(lf_entropy ~ narr_freq_log + (1|lang) + (1|field), data)
+em_narr <- lmer(log(lf_entropy + 1) ~ narr_freq_log + (1|lang) + (1|field), data)
 summary(em_narr)
 
-em_narrelse <- lmer(lf_entropy ~ narr_freq_log + else_freq_log + (1|lang) + (1|field), data)
+em_narrelse <- lmer(log(lf_entropy + 1) ~ narr_freq_log + else_freq_log + (1|lang) + (1|field), data)
 summary(em_narrelse)
 
 anova(em_else, em_narr, em_narrelse)
 ```
 
-```{r}
-data$pred_count_narr <- predict(cm_narr)
-data$pred_count_else <- predict(cm_else)
-data$pred_entropy_narr <- predict(em_narr)
-data$pred_entropy_else <- predict(em_else)
-write_csv(data, '../data/processed/data_pred.csv')
-```
-
 
 
 ```{r}
-
-slope_A = 1.356e-01
-slope_B = 6.530e-02
-se_A = 9.540e-03
-se_B = 8.200e-03
-n = 3243
+slope_A = 2.272e-01
+slope_B = 1.205e-01
+se_A = 9.430e-03
+se_B = 8.213e-03
+n = 3200
 
 # Calculate Welch's T-test statistic
 t_stat <- (slope_A - slope_B) / sqrt(se_A^2 + se_B^2)
@@ -83,11 +74,12 @@ p_value
 
 
 ```{r}
-slope_A = 1.572e-01
-slope_B = 7.594e-02
-se_A = 1.096e-02 
-se_B = 9.429e-03
-n = 3243
+
+slope_A = 0.14828
+slope_B = 0.07635
+se_A = 0.01288
+se_B = 0.01138
+n = 3200
 
 # Calculate Welch's T-test statistic
 t_stat <- (slope_A - slope_B) / sqrt(se_A^2 + se_B^2)
